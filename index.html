@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+      <title>Home work</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="title">Задать вопрос</div>
+         <form action="https://60376bfd5435040017722533.mockapi.io/form" method="POST">
+            <div class="name">
+               <input type="text" name="name" placeholder="Фамилия Имя Отчество *" pattern="[А-Яа-яЁё\-\s]+" required />
+            </div>
+            <div class="tel">
+               <input type="tel" name="phone" placeholder="Телефон *" pattern="[0-9\-\+\s]+" required />
+            </div>
+            <div class="email"><input type="email" name="email" placeholder="Email" /></div>
+            <button type="submit">Отправить запрос</button>
+         </form>
+      </div>
+   </body>
+</html>
